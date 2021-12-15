@@ -9,21 +9,25 @@ o primeiro representando o nome do aluno e o segundo representando a sua idade.
 */
 public class Ex1_NomeEIdade {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
 
-        String nome;
-        int idade;
+        Scanner ler = new Scanner(System.in);
+        String nome = "";
+        int nota;
 
-        while(true) {
-            System.out.println("Nome: ");
-            nome = scan.next();
-            if (nome.equals("0")) break;
+        while (nome != "0"){
 
-            System.out.println("Idade: ");
-            idade = scan.nextInt();
+            System.out.println("Digite o nome do aluno ou '0' para parar o programa: ");
+            nome = ler.next();
+
+            if (nome.equals("0")){
+
+                break;
+            }
+
+            System.out.println("Digite a nota do aluno: ");
+            nota = ler.nextInt();
+
         }
-
-        System.out.println("Continua aqui...");
 
     }
 
